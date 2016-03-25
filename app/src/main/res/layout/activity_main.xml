@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ansel.animdemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_set_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AnimSet With Xml"
+            />
+
+        <Button
+            android:id="@+id/btn_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anim Alpha"
+            />
+
+        <Button
+            android:id="@+id/btn_scale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anim Scale"
+            />
+
+        <Button
+            android:id="@+id/btn_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anim Rotate"
+            />
+
+        <Button
+            android:id="@+id/btn_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anim Translate"
+            />
+
+        <Button
+            android:id="@+id/btn_anim_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anim Group"
+            /><Button
+            android:id="@+id/btn_cus_amin_tremble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anim Tremble"
+            />
+        <Button
+            android:id="@+id/btn_cus_amin_tvclose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anim Tvclose"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

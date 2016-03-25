@@ -1,0 +1,45 @@
+#Android 动画
+##View 动画
+    既可以在代码中动态的指定这四种动画效果，也可以在 xml 文件中定义， xml 文件中视图动画的目录是 res/anim/file_name.xml ，
+    与视图动画不同， xml 文件中属性动画的目录是 res/animator/file_name.xml ，不过属性动画并不推荐在 xml 文件中定义
+###1、Alpha
+###2、Translate
+###3、Scale
+###4、Rotate
+    <?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shareInterpolator="true"  表示动画集合中的所有动画共享插值器>
+    
+        <!--透明度-->
+        <alpha
+            android:fromAlpha="0"   <-- 透明度起始值，0表示完全透明 -->
+            android:toAlpha="1"  <-- 透明度最终值，1表示不透明 -->
+            />
+    
+        <!--缩放-->
+        <scale
+            android:fromXScale="0.5f"   <!--水平方向缩放的起始值，比如0-->
+            android:fromYScale="1.5f"   <!--竖直方向缩放的起始值，比如0-->
+            android:toXScale="0.5f"     <!--水平方向缩放的结束值，比如2-->
+            android:toYScale="1.5f"     <!--竖直方向缩放的结束值，比如2-->
+            android:pivotX="100"        <!--缩放支点的x坐标-->
+            android:pivotY="100"        <!--缩放支点的y坐标（支点可以理解为缩放的中心点，缩放过程中这点的坐标是不变的;支点默认在中心位置）-->
+             />
+    
+        <!--位移-->
+        <translate
+            android:fromXDelta="0"      <!--x起始值-->
+            android:toXDelta="0"        <!--x结束值-->
+            android:fromYDelta="200"    <!--y起始值-->
+            android:toYDelta="200"      <!--y结束值-->
+             />
+    
+        <!--旋转-->
+        <rotate
+            android:fromDegrees="0"     <!-- 旋转起始角度-->
+            android:toDegrees="360"     <!--旋转结束角度-->
+            android:pivotX="200"
+            android:pivotY="200" />
+    
+    </set>
+##属性动画
